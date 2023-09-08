@@ -1,6 +1,6 @@
 @import './../../scss/all.scss';
 
-.contact {
+.lacre {
     background-color: $white;
     height: auto;
     padding: 80px 0;
@@ -11,11 +11,70 @@
     position: relative;
     flex-direction: column;
 
+    .tab-content {
+        width: 100%;
+        flex: 1;
+    }
+
     .default-title {
         // opacity: 0;
     }
 
+    .tab-content {
+        position: relative;
+        height: 200px;
+        flex: initial;
+    }
+
+
+
+    .slick-slider {
+        width: 100%;
+        img {
+            max-height: 100px;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .tab-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .legend {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+
+            .name {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .tam {
+                font-size: 16px;
+                color: $color-2;
+            } 
+            .qtd {
+                font-size: 16px;
+                color: $color-2;
+                font-weight: bold;
+            }
+            .ref {
+                font-size: 14px;
+            }
+        }
+    }
+
+
     .container {
+        flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
         gap: 40px;
@@ -26,8 +85,8 @@
     }
 
     &__modal {
-        // opacity: 0;
-        background-color: $color-1-500;
+        opacity: 0;
+        background-color: $color-3-400;
         height: 100%;
         min-height: 255px;
         max-height: 100%;
@@ -53,24 +112,19 @@
             font-size: 32px;
             font-weight: 500;
             text-transform: uppercase;
-            color: $white;
-        }
-
-        p {
-            color: $white;
         }
         
         &__action {
             padding: 10px 20px;
-            background-color: $color-2 !important;
+            background-color: $color-2;
             color: $color-1;
             font-weight: 600;
             font-size: 22px;
             border-radius: 4px;
             cursor: pointer;
-            
+
             &:hover {
-                background-color: $color-2-700 !important;
+                background-color: $color-2-700;
             }
         }
     }
@@ -85,7 +139,7 @@
             align-items: center;
             justify-content: flex-start;
             gap: 10px;
-            color: $white;
+            color: $color-7;
 
             &:hover {
                 text-decoration: underline;
@@ -97,14 +151,14 @@
         }
     }
 
-    // &.animate {
-    //     .default-title {
-    //         @include fade("in","right", 300px, 4s);
-    //     }
+    &.animate {
+        .default-title {
+            @include fade("in","right", 300px, 4s);
+        }
         
-    //     .contact__modal {
-    //         @include fade("in","zoom", .6, 5s);
-    //     }
-    // }
+        .contact__modal {
+            @include fade("in","zoom", .6, 5s);
+        }
+    }
 
 }

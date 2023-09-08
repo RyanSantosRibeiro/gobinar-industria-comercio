@@ -18,7 +18,7 @@ const Contact = () => {
     }
     
     useEffect(() => {
-        $(window).on('scroll',()=>active());
+        // $(window).on('scroll',()=>active());
     },[]);
 
     return  (
