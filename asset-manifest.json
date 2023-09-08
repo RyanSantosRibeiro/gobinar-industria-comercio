@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/gobinar-industria-comercio/static/css/main.fca41581.css",
-    "main.js": "/gobinar-industria-comercio/static/js/main.3b0e3f23.js",
+    "main.css": "/gobinar-industria-comercio/static/css/main.b2d10577.css",
+    "main.js": "/gobinar-industria-comercio/static/js/main.b780b510.js",
+    "static/media/l2.png": "/gobinar-industria-comercio/static/media/l2.eb5625c0c39720d57cc6.png",
     "static/media/riofit.png": "/gobinar-industria-comercio/static/media/riofit.e0e1e778f8a5c521e025.png",
     "static/media/vekyo.png": "/gobinar-industria-comercio/static/media/vekyo.68c027c18bba808cb47f.png",
     "static/media/banner-3.jpg": "/gobinar-industria-comercio/static/media/banner-3.3dd94edbd2bf7e4329e8.jpg",
     "static/media/banner-1.jpg": "/gobinar-industria-comercio/static/media/banner-1.acc3a21171e853f274ac.jpg",
     "static/media/ilumine.png": "/gobinar-industria-comercio/static/media/ilumine.46b64309c5d422a30b53.png",
     "static/media/banner-2.jpg": "/gobinar-industria-comercio/static/media/banner-2.32dfba504c062888d556.jpg",
+    "static/media/l1.png": "/gobinar-industria-comercio/static/media/l1.9e1c93bebb00fb799d65.png",
     "static/media/h1.png": "/gobinar-industria-comercio/static/media/h1.1eb27e1b35663ae7e238.png",
     "static/media/hipy.jpg": "/gobinar-industria-comercio/static/media/hipy.0a1711fd3538f19bfa5a.jpg",
     "static/media/b8.png": "/gobinar-industria-comercio/static/media/b8.ae7af11b100d1659fc47.png",
     "static/media/b5.png": "/gobinar-industria-comercio/static/media/b5.e4fbff21cfe845a34ed1.png",
     "static/media/e3.png": "/gobinar-industria-comercio/static/media/e3.0dc7cca6547dd2638b55.png",
+    "static/media/l3.png": "/gobinar-industria-comercio/static/media/l3.f0dc0a5d7595b2c1e0b5.png",
     "static/media/dily.jpg": "/gobinar-industria-comercio/static/media/dily.d9eac99dabb6ff4a48b6.jpg",
     "static/media/b4.png": "/gobinar-industria-comercio/static/media/b4.3799107b101f91d67630.png",
     "static/media/b3.png": "/gobinar-industria-comercio/static/media/b3.64ed6952b7a4bbc4b3b0.png",
@@ -29,6 +32,7 @@
     "static/media/maluan.jpg": "/gobinar-industria-comercio/static/media/maluan.2718b054d9d4114f043e.jpg",
     "static/media/b6.png": "/gobinar-industria-comercio/static/media/b6.f919ef529d5382182390.png",
     "static/media/rgtx.jpg": "/gobinar-industria-comercio/static/media/rgtx.7efb41c99c8934fc13f1.jpg",
+    "static/media/l4.png": "/gobinar-industria-comercio/static/media/l4.cd63ae880d2d4577e99e.png",
     "static/media/b7.png": "/gobinar-industria-comercio/static/media/b7.26e93b65bf9bb20d41e1.png",
     "static/media/b2.png": "/gobinar-industria-comercio/static/media/b2.4f81e7b777416a2dbb11.png",
     "static/media/e1.png": "/gobinar-industria-comercio/static/media/e1.9c384e297f1f65bcce19.png",
@@ -41,11 +45,11 @@
     "static/media/slick.ttf": "/gobinar-industria-comercio/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/gobinar-industria-comercio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/gobinar-industria-comercio/index.html",
-    "main.fca41581.css.map": "/gobinar-industria-comercio/static/css/main.fca41581.css.map",
-    "main.3b0e3f23.js.map": "/gobinar-industria-comercio/static/js/main.3b0e3f23.js.map"
+    "main.b2d10577.css.map": "/gobinar-industria-comercio/static/css/main.b2d10577.css.map",
+    "main.b780b510.js.map": "/gobinar-industria-comercio/static/js/main.b780b510.js.map"
   },
   "entrypoints": [
-    "static/css/main.fca41581.css",
-    "static/js/main.3b0e3f23.js"
+    "static/css/main.b2d10577.css",
+    "static/js/main.b780b510.js"
   ]
 }
