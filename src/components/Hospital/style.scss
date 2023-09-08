@@ -1,0 +1,164 @@
+@import './../../scss/all.scss';
+
+.hospital {
+    background-color: $color-7;
+    height: auto;
+    padding: 80px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+    .tab-content {
+        width: 100%;
+        flex: 1;
+    }
+
+    .default-title {
+        // opacity: 0;
+    }
+
+    .tab-content {
+        position: relative;
+        height: 200px;
+        flex: initial;
+    }
+
+
+
+    .slick-slider {
+        width: 100%;
+        img {
+            max-height: 100px;
+            width: auto;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        .tab-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .legend {
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+
+            .name {
+                font-size: 18px;
+                font-weight: bold;
+            }
+            .tam {
+                font-size: 16px;
+                color: $color-2;
+            } 
+            .qtd {
+                font-size: 16px;
+                color: $color-2;
+                font-weight: bold;
+            }
+            .ref {
+                font-size: 14px;
+            }
+        }
+    }
+
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 40px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__modal {
+        opacity: 0;
+        background-color: $color-3-400;
+        height: 100%;
+        min-height: 255px;
+        max-height: 100%;
+        width: 450px;
+        max-width: 70%;
+        margin: 40px 0;
+        // border: 3px solid $color-2;
+        box-shadow:  10px 10px 40px #bebebe;
+        border-radius: 6px;
+        padding: 30px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+
+        @include mobile {
+            margin: 16px 0 40px;
+        }
+
+        h4 {
+            font-size: 32px;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+        
+        &__action {
+            padding: 10px 20px;
+            background-color: $color-2;
+            color: $color-1;
+            font-weight: 600;
+            font-size: 22px;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $color-2-700;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+            color: $color-7;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        img {
+            width: 30px;
+        }
+    }
+
+    &.animate {
+        .default-title {
+            @include fade("in","right", 300px, 4s);
+        }
+        
+        .contact__modal {
+            @include fade("in","zoom", .6, 5s);
+        }
+    }
+
+}
