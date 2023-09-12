@@ -14,11 +14,14 @@
     width: 100%;
     z-index: 100;
     transition: 400ms all ease-in-out;
+    background-color: $white;
+
+    @include tablet {
+        height: 50px;
+    }
 
     &.fixed {
-        background-color: rgba($color: $white, $alpha: .6);
-        backdrop-filter: blur(8px);
-        box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
+        // box-shadow: 0 4px 6px 0 rgba(12, 0, 46, 0.06);
 
     }
     
@@ -34,6 +37,10 @@
         img {
             max-height: 80px;
             width: auto;
+
+            @include mobile {
+                max-height: 40px;
+            }
         }
         a {
             font-size: $font-size-xxl;
@@ -84,6 +91,28 @@
 
         @include mobile {
             display: none;
+            opacity: 0;
+            position: fixed;
+            left: 0;
+            top: 50px;
+            width: 100%;
+            height: auto;
+            background-color: $white;
+
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 14px;
+
+            li {
+                display: flex;
+                width: 100%;
+            }
+
+            a {
+                padding: 8px;
+                width: 100%;
+            }
         }
 
         
@@ -130,17 +159,39 @@
 
             }
         }
+
+        &__button {
+            display: none;
+            width: 30px;
+            height: auto;
+            
+            @include  tablet {
+                display: block;
+            }
+            
+            img {
+                width: 30px;
+
+            }
+        }
     }
 
 
     &__button {
         @include desktop {
             font-size: 14px !important;
-            padding: 15px 20px !important;
+            padding: 10px 20px !important;
         }
 
         @include mobile {
-            display: none;
+            max-height: 70%;
+        }
+    }
+
+    &.open {
+        .header__menu {
+            display: flex;
+            @include fade("in","down", 40px, .6s);
         }
     }
 }

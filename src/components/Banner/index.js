@@ -13,7 +13,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Banner = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -29,15 +29,12 @@ const Banner = () => {
             <Slider {...settings}>
                 <div>
                     <img src={banner1} />
-                    <p className="legend">Legend 1</p>
                 </div>
                 <div>
                     <img src={banner2} />
-                    <p className="legend">Legend 2</p>
                 </div>
                 <div>
                     <img src={banner3} />
-                    <p className="legend">Legend 3</p>
                 </div>
             </Slider>
         </section>

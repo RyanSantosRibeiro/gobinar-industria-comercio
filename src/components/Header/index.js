@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './style.scss';
 import logo from './../../assets/img/logo.png'
+import menu from './../../assets/img/menu.png'
 
 import $ from 'jquery';
 
@@ -39,9 +40,14 @@ const Header = () => {
                     {/* <li className='highlight'><a href='#job'>My Works</a></li> */}
                 </ul>
 
+
+
                 <a href='#contact' className='header__button primary-button'>
                     Faça um orçamento!
                 </a>
+                <div className='header__menu__button' onClick={()=>$(".header").toggleClass("open")}>
+                    <img src={menu} />
+                </div>
             </div>
         </div>
     )

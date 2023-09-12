@@ -10,6 +10,10 @@
     overflow: hidden;
     max-height: 60vh;
 
+    @include tablet {
+        height: auto;
+    }
+
     .slick-slider {
         height: 100%    ;
     }
@@ -33,19 +37,33 @@
     }
 
     .slick-prev {
-        left: 50px;
+        left: 50px !important;
         z-index: 20;
         transform: scale(2);
     }
 
     .slick-next {
-        right: 50px;
+        right: 50px !important;
         z-index: 20;
         transform: scale(2);
     }
 
-    @include mobile {
-        height: 500px;
+    .slick-arrow {
+        &::before,&::after {
+            color: $color-1;
+        }
+
+        .slick-next {
+            @include tablet {
+                right: 0;
+            }
+        }
+
+        .slick-prev {
+            @include tablet {
+                left: 0;
+            }
+        }
     }
     
     &__image {

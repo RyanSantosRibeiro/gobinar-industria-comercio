@@ -98,6 +98,24 @@
         }
     }
 
+    .slick-arrow {
+        &::before,&::after {
+            color: $color-1;
+        }
+
+        .slick-next {
+            @include tablet {
+                right: 0;
+            }
+        }
+
+        .slick-prev {
+            @include tablet {
+                left: 0;
+            }
+        }
+    }
+
     .slick-slider {
         img {
             max-height: 100px;
@@ -121,6 +139,7 @@
             display: flex;
             flex-direction: column;
             gap: 3px;
+            padding-bottom: 10px;
 
             .name {
                 font-size: 18px;
