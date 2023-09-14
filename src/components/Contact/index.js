@@ -45,10 +45,10 @@ const Contact = () => {
                     </div>
                 </div>
                 <div className='contact__modal social-media'>
-                    <a href='/' className='contact__modal__action'>
+                    <a href='https://instagram.com/gobinar_bobinas_termicas_pdv?igshid=MzRlODBiNWFlZA==' className='contact__modal__action'>
                         <img src={instagram}/>
                     </a>
-                    <a href='/' className='contact__modal__action'>
+                    <a href='https://fb.me/9i8wFHjls' className='contact__modal__action'>
                         <img src={face}/>
                     </a>
                     <a href='/' className='contact__modal__action'>
