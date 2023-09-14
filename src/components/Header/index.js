@@ -43,7 +43,7 @@ const Header = () => {
 
 
                 <a href='#contact' className='header__button primary-button'>
-                    Faça um orçamento!
+                    Promoção - últimas unidades
                 </a>
                 <div className='header__menu__button' onClick={()=>$(".header").toggleClass("open")}>
                     <img src={menu} />

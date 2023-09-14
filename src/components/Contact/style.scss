@@ -30,7 +30,7 @@
         // opacity: 0;
         background-color: $color-1-500;
         height: 100%;
-        min-height: 255px;
+        min-height: 220px;
         max-height: 100%;
         width: 450px;
         max-width: 70%;
@@ -52,10 +52,12 @@
         }
 
         h4 {
-            font-size: 32px;
-            font-weight: 500;
+            font-size: 26px;
+            font-weight: 600;
             text-transform: uppercase;
             color: $white;
+            text-align: center;
+            line-height: 32px;
         }
 
         p {
@@ -64,12 +66,13 @@
         
         &__action {
             padding: 10px 20px;
-            background-color: $color-2 !important;
             color: $color-1;
             font-weight: 600;
             font-size: 22px;
             border-radius: 4px;
             cursor: pointer;
+            width: 150px !important;
+            text-align: center !important;
             
             &:hover {
                 background-color: $color-2-700 !important;
@@ -83,19 +86,53 @@
         gap: 20px;
 
         a {
+            padding: 16px 20px;
+            border-radius: 50px;
+            background-color: $color-2;
             display: flex;
             align-items: center;
             justify-content: flex-start;
             gap: 10px;
             color: $white;
+            font-weight: 700;
 
             &:hover {
-                text-decoration: underline;
+                text-decoration: none;
+                background-color: $color-2-700;
             }
         }
 
         img {
             width: 30px;
+        }
+    }
+
+    .social-media {
+        width: 20%;
+        display: flex;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        gap: 0 !important;
+
+        @include mobile {
+            width: 100%;
+        }
+
+        a {
+            max-width: 40%;
+            width: auto !important;
+            height: auto !important;
+            padding: 2px !important;
+
+            @include mobile {
+                max-width: 49% !important;
+                width: 49% !important;
+            }
+
+
+            &:hover {
+                background-color: transparent !important;
+            }
         }
     }
 

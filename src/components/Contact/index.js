@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import './style.scss';
 import whatsapp from '../../assets/img/whatsapp.png';
 import instagram from '../../assets/img/instagram.png';
+import face from '../../assets/img/facebook.png';
+import email from '../../assets/img/mail.png';
 import $ from 'jquery';
 
 
@@ -24,27 +26,37 @@ const Contact = () => {
     return  (
         <section className="contact" id='contact'>
             <div className='container'>
-                <h2 className='default-title'>Faça um Orçamento</h2>
+                <h2 className='default-title'>Orçamento Gratuito</h2>
             </div>
             <div className="container">
                 <div className='contact__modal'>
-                    <h4>Whatsapp</h4>
+                    <h4>Faça uma cotação gratuita aqui!
+
+                    </h4>
                     <div className='contact__social'>
-                        <a href='https://wa.me/55219900000000?text=Orçamento%21'>
+                        <a href='https://wa.me/message/JX3HTMYI2FY2K1'>
                             <img src={whatsapp} alt=''/>
-                            <span>21 90000-0000</span>
+                            <span>Whatsapp</span>
                         </a>
                         {/* <a href='https://www.instagram.com/ryan.santosrj/'>
                             <img src={instagram} alt=''/>
                             <span>@ryan.santosrj</span>
                         </a> */}
                     </div>
-                    <a href='/' onClick={sendMessage()} className='contact__modal__action primary-button'>Mensagem</a>
                 </div>
-                <div className='contact__modal'>
-                    <h4>Email</h4>
-                    <p>Faça um orçamento <br></br><br></br> <b> contato@contato.com</b></p>
-                    <a href='/' onClick={sendMessage()} className='contact__modal__action primary-button'>Enviar</a>
+                <div className='contact__modal social-media'>
+                    <a href='/' className='contact__modal__action'>
+                        <img src={instagram}/>
+                    </a>
+                    <a href='/' className='contact__modal__action'>
+                        <img src={face}/>
+                    </a>
+                    <a href='/' className='contact__modal__action'>
+                        <img src={email}/>
+                    </a>
+                    <a href='/' className='contact__modal__action'>
+                        <img src={whatsapp}/>
+                    </a>
                 </div>
             </div>
         </section>

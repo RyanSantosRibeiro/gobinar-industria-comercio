@@ -5,10 +5,66 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 698px;
     position: relative;
     overflow: hidden;
-    max-height: 60vh;
+
+    &__link {
+        margin-top: -3px;
+        flex-direction: row;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        background-color: $white;
+        padding: 16px;
+        gap: 20px;
+
+        @include mobile {
+            flex-direction: column;
+        }
+
+        p {
+            display: flex;
+            text-align: center;
+            font-weight: 400;
+            font-size: 20px;
+            display: flex;
+            gap: 20px;
+
+            @include mobile {
+                flex-direction: column;
+
+                b {
+                    font-size: 24px;
+                }
+            }
+
+            b {
+                font-weight: 700;
+            }
+        }
+
+        a { 
+            border-radius: 50px;
+            padding: 16px;
+            background-color: $color-2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            gap: 10px;
+            font-weight: 700;
+            color: $white;
+        }
+
+
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
 
     @include tablet {
         height: auto;
