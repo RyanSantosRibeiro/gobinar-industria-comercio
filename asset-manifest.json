@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gobinar-industria-comercio/static/css/main.3bdcd2c4.css",
-    "main.js": "/gobinar-industria-comercio/static/js/main.d80dc6c6.js",
+    "main.js": "/gobinar-industria-comercio/static/js/main.00c1f047.js",
     "static/media/l2.png": "/gobinar-industria-comercio/static/media/l2.eb5625c0c39720d57cc6.png",
     "static/media/riofit.png": "/gobinar-industria-comercio/static/media/riofit.e0e1e778f8a5c521e025.png",
     "static/media/vekyo.png": "/gobinar-industria-comercio/static/media/vekyo.68c027c18bba808cb47f.png",
@@ -46,10 +46,10 @@
     "static/media/slick.woff": "/gobinar-industria-comercio/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/gobinar-industria-comercio/index.html",
     "main.3bdcd2c4.css.map": "/gobinar-industria-comercio/static/css/main.3bdcd2c4.css.map",
-    "main.d80dc6c6.js.map": "/gobinar-industria-comercio/static/js/main.d80dc6c6.js.map"
+    "main.00c1f047.js.map": "/gobinar-industria-comercio/static/js/main.00c1f047.js.map"
   },
   "entrypoints": [
     "static/css/main.3bdcd2c4.css",
-    "static/js/main.d80dc6c6.js"
+    "static/js/main.00c1f047.js"
   ]
 }
