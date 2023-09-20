@@ -51,9 +51,9 @@ const Contact = () => {
                     <a href='https://fb.me/9i8wFHjls' className='contact__modal__action'>
                         <img src={face}/>
                     </a>
-                    <a href='/' className='contact__modal__action'>
+                    {/* <a href='/' className='contact__modal__action'>
                         <img src={email}/>
-                    </a>
+                    </a> */}
                     <a href='/' className='contact__modal__action'>
                         <img src={whatsapp}/>
                     </a>

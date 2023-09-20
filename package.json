@@ -22,7 +22,7 @@
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://ryansantosribeiro.github.io/gobinar-industria-comercio/",
+  "homepage": "https://gobinar.com.br/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

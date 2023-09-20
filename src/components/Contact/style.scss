@@ -114,6 +114,7 @@
         flex-direction: row !important;
         flex-wrap: wrap !important;
         gap: 0 !important;
+        justify-content: space-around;
 
         @include mobile {
             width: 100%;
